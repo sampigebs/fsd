@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous Wallpaper Generator</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Luminous</h1>
+        <p>AI-Based Wallpaper Generator</p>
+    </header>
+
+    <main>
+        <section id="description-input" class="card">
+            <h2>Enter Your Description</h2>
+            <textarea id="user-description" placeholder="Describe the wallpaper you'd like..." rows="5"></textarea>
+        </section>
+
+        <section id="color-options" class="card">
+            <h2>Choose Color Options</h2>
+            <label for="color-palette">Color Palette:</label>
+            <select id="color-palette">
+                <option value="vibgyor">VIBGYOR</option>
+                <option value="custom">Custom</option>
+            </select>
+            <div id="custom-colors" class="custom-colors">
+                <input type="color" id="color1" value="#8A2BE2">
+                <input type="color" id="color2" value="#4B0082">
+                <input type="color" id="color3" value="#0000FF">
+                <input type="color" id="color4" value="#00FF00">
+                <input type="color" id="color5" value="#FFFF00">
+                <input type="color" id="color6" value="#FF7F00">
+                <input type="color" id="color7" value="#FF0000">
+            </div>
+        </section>
+
+        <section id="style-options" class="card">
+            <h2>Style Options</h2>
+            <label for="style-select">Choose a Style:</label>
+            <select id="style-select">
+                <option value="abstract">Abstract</option>
+                <option value="nature">Nature</option>
+                <option value="patterns">Patterns</option>
+            </select>
+        </section>
+
+        <section id="resolution-options" class="card">
+            <h2>Resolution Settings</h2>
+            <label for="resolution-select">Resolution:</label>
+            <select id="resolution-select">
+                <option value="1920x1080">1920x1080</option>
+                <option value="2560x1440">2560x1440</option>
+                <option value="3840x2160">3840x2160</option>
+            </select>
+        </section>
+
+        <section id="generate-button" class="card">
+            <button id="generate-wallpaper">Generate Wallpaper</button>
+        </section>
+
+        <section id="wallpaper-display" class="card">
+            <h2>Generated Wallpaper</h2>
+            <div id="wallpaper-result">
+                <!-- The generated wallpaper will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Luminous Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
